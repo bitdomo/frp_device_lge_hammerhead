@@ -151,3 +151,6 @@
 
 # Thermal engine
 /dev/msm_thermal_query            u:object_r:thermal_engine_device:s0
+
+# Factory reset protection
+/dev/block/platform/msm_sdcc\.1/by-name/grow           u:object_r:frp_block_device:s0

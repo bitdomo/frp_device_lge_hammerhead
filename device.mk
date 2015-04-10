@@ -360,6 +360,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.input.noresample=1
 
+# Factory reset protect
+PRODUCT_PROPERTY_OVERRIDES += \
+   ro.frp.pst=/dev/block/platform/msm_sdcc.1/by-name/grow
+
 # Modem debugger
 ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
 PRODUCT_PACKAGES += \
